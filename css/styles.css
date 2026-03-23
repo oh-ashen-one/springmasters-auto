@@ -132,3 +132,7 @@ h3{font-size:clamp(1.1rem,3vw,1.5rem);}
 @media(min-width:768px){.services-grid{grid-template-columns:repeat(2,1fr);}.stats-grid{grid-template-columns:repeat(4,1fr);}.testimonials-grid{grid-template-columns:repeat(2,1fr);}.contact-grid{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1.5fr 1fr 1fr;}.nav-phone-header{display:block;}}
 @media(min-width:1024px){.services-grid{grid-template-columns:repeat(3,1fr);}.testimonials-grid{grid-template-columns:repeat(3,1fr);}}
 @media(max-width:480px){.hero-ctas{flex-direction:column;}}
+@media(max-width:767px){
+  .service-card,.testimonial-card,.stat-item,.reveal,.hero-eyebrow,.hero h1,.hero-sub,.hero-ctas{opacity:1!important;transform:none!important;}
+  .faq-item{opacity:1!important;transform:none!important;}
+}

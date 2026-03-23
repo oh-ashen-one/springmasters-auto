@@ -30,3 +30,9 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => { const item = btn.closest('.faq-item'); const isOpen = item.classList.contains('open'); document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open')); if (!isOpen) item.classList.add('open'); });
 });
 gsap.utils.toArray('section').forEach(s => { const t = s.querySelector('h2'); if (t && !s.classList.contains('hero')) gsap.from(t, { opacity: 0, y: 30, duration: 0.7, ease: 'power3.out', scrollTrigger: { trigger: s, start: 'top 82%', once: true } }); });
+
+window.addEventListener('load', function() {
+  if (typeof ScrollTrigger !== 'undefined') {
+    ScrollTrigger.refresh();
+  }
+});
